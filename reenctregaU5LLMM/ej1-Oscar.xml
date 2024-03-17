@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Óscar Martín-Castaño Carrillo-->
+<!DOCTYPE examen SYSTEM "./ej1-OscarDTD.dtd">
+<!-- <!DOCTYPE examen [
+<!ELEMENT examen (triangulo, mascota, centro_educativo, abono)>
+<!ELEMENT triangulo (#PCDATA)>
+<!ATTLIST triangulo
+          base CDATA "1">
+<!ELEMENT mascota (#PCDATA)>
+<!ATTLIST mascota
+          numero CDATA #REQUIRED>
+<!ELEMENT centro_educativo (#PCDATA)>
+<!ATTLIST centro_educativo
+          nombre CDATA #FIXED "IES Gran Capitan">
+<!ELEMENT abono (#PCDATA)>
+<!ATTLIST abono
+          tipo (cheque | tarjeta | efectivo) >
+
+]> -->
+<examen>
+  <triangulo base="100"/>
+  <mascota numero="5677"/>
+  <centro_educativo nombre="IES Gran Capitan"/>
+  <abono tipo="cheque">30,4</abono>
+</examen>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Óscar Martín-Castaño Carrillo-->
+<pelicula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej4-OscarXSD.xsd" anno="2023" importante="false">
+   <título>Oppenheimer</título>
+   <nacionalidad>Reino Unido</nacionalidad>
+   <clasificación>+12</clasificación>
+   <proyecto>en_progreso</proyecto>
+</pelicula>

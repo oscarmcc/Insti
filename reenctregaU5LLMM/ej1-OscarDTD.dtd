@@ -1,0 +1,13 @@
+<!ELEMENT examen (triangulo, mascota, centro_educativo, abono)>
+<!ELEMENT triangulo (#PCDATA)>
+<!ATTLIST triangulo
+          base CDATA "1">
+<!ELEMENT mascota (#PCDATA)>
+<!ATTLIST mascota
+          numero CDATA #REQUIRED>
+<!ELEMENT centro_educativo (#PCDATA)>
+<!ATTLIST centro_educativo
+          nombre CDATA #FIXED "IES Gran Capitan">
+<!ELEMENT abono (#PCDATA)>
+<!ATTLIST abono
+          tipo (cheque | tarjeta | efectivo) "cheque" >

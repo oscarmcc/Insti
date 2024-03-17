@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Óscar Martín-Castaño Carrillo-->
+<!DOCTYPE alumno [
+<!ELEMENT alumno (edad , nombre , activo?)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT activo EMPTY>
+]>
+<alumno>
+  <!-- Se ha cambiado el orden de la edad y el nombre, además se le ha añadido el elemento activo que está vacío -->
+  <edad>35</edad>
+  <nombre>Emiliana Piedra</nombre>
+  <activo/>
+</alumno>

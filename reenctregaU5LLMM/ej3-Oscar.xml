@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro+ , prestamo+)>
+<!ELEMENT libro (titulo , autor)>
+<!ATTLIST libro id NMTOKEN #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT prestamo (fecha)>
+<!ATTLIST prestamo idref NMTOKEN #REQUIRED>
+<!ELEMENT fecha (#PCDATA)>
+]>
+<biblioteca>
+  <libro id="L1">
+    <titulo>Rompiendo mi monotinía</titulo>
+    <autor>Kike Mariño</autor>
+  </libro>
+  <libro id="L2">
+    <titulo>Bajo la luna</titulo>
+    <autor>ALberto Pérez</autor>
+  </libro>
+  <libro id="L3">
+    <titulo>Pensar es vivir</titulo>
+    <autor>Encarnación</autor>
+  </libro>
+  <prestamo idref="L1">
+    <fecha>2023-01-15</fecha>
+  </prestamo>
+  <prestamo idref="L1">
+    <fecha>2023-02-03</fecha>
+  </prestamo>
+  <prestamo idref="L2">
+    <fecha>2023-02-20</fecha>
+  </prestamo>
+  <prestamo idref="L3">
+    <fecha>2023-03-10</fecha>
+  </prestamo>
+  <prestamo idref="L3">
+    <fecha>2023-03-25</fecha>
+  </prestamo>
+</biblioteca>

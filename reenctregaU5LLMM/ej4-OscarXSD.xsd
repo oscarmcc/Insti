@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Óscar Martín-Castaño Carrillo-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <!-- Definición del tipo para el elemento proyecto -->
+  <xs:simpleType name="ProyectoTipo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="en_progreso"/>
+      <xs:enumeration value="completo"/>
+      <xs:enumeration value="pendiente"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Elemento proyecto que toma los valores en_progreso, completo o pendiente, por defecto en_progreso -->
+  <xs:element name="proyecto" type="ProyectoTipo" default="en_progreso"/>
+  <!-- Definición del tipo de dato personalizado para el elemento película -->
+  <xs:element name="pelicula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="título" type="xs:string"/>
+        <xs:element name="nacionalidad" type="xs:string"/>
+        <xs:element name="clasificación" type="xs:string"/>
+        <xs:element name="proyecto" type="ProyectoTipo"/>
+      </xs:sequence>
+      <xs:attribute name="anno" type="xs:integer" use="optional"/>
+        <!-- Atributo obligatorio "importante" con valor booleano por defecto false -->
+       <xs:attribute name="importante" type="xs:boolean" default="false"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
